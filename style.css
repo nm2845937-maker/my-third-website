@@ -1,0 +1,375 @@
+@import
+url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+);
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Quicksand", sans-serif;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+}
+ul {
+list-style: none;
+}
+
+.container {
+max-width: 1100px;
+margin: auto;
+}
+
+
+
+/* Offers Section start */
+/* height: 80vh; */
+#offers {
+background: url("./images/offer-background.jpg") center
+center/cover fixed;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 5rem 0;
+position: relative;
+text-align: center;
+}
+
+#offers .offers-items-wrapper {
+overflow: hidden;
+width: 100%;
+}
+
+#offers .offers-items {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+#offers .offer-item {
+min-width: 100%;
+box-sizing: border-box;
+}
+
+
+#offers .offers-items img {
+width: 200px;
+}
+#offers h2 {
+color: #e4b95b;
+}
+#offers .title p {
+color: #fff;
+font-weight: 500;
+}
+#offers .offers-items h3 {
+font-size: 25px;
+color: #fff;
+margin: 15px 0;
+}
+#offers .offers-items p {
+color: #fff;
+font-size: 14px;
+padding: 0 20px;
+font-weight: 300;
+margin-bottom: 15px;
+}
+#offers .offers-items span {
+font-weight: 600;
+font-size: 18px;
+margin-left: 5px;
+}
+
+
+
+/* Slider navigation buttons */
+#offers .prev, #offers .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+font-size: 24px;
+border: none;
+cursor: pointer;
+padding: 10px;
+}
+
+#offers .prev {
+left: 10px;
+}
+
+#offers .next {
+right: 10px;
+}
+
+#offers .prev:hover, #offers .next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+/* Offers Section end */
+
+.container{ width: 80%; margin: 0 auto; }
+#menu{
+background: #f4f2ed; padding: 5rem 0;
+}
+
+#menu .title{
+text-align: center; margin-bottom: 20px;
+}
+
+#menu .title h2{
+color: #383848; font-size: 40px; margin-bottom: 20px;
+}
+#menu .title p{
+color: #9a9a9a; font-weight: bold;
+}
+.menu-items{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.menu-item{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 40px;
+}
+.menu-item img{
+width: 80px;
+margin-right: 20px;
+border-radius: 50%;
+}
+.menu-item h3{
+color: #383848;
+border-bottom: dashed 1px #c2bdbd;
+padding-bottom: 10px;
+margin-bottom: 10px;
+position: relative;
+}
+.menu-item h3 span{
+position: absolute;
+right: 0; top: 0;
+}
+.btn{
+display: block;
+margin: auto;
+border: none;
+margin-top: 30px;
+}
+.btn a{
+color: #f4f2ed;
+background-color: #383848;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 6px;
+}
+
+/* Gallery Section */
+#gallery {
+background: url("./images/offer-background.jpg") center
+center/cover;
+padding: 3rem 0;
+color: #fff;
+}
+
+.container {
+width: 80%;
+margin: 0 auto;
+text-align: center;
+}
+
+
+#gallery h2 {
+font-size: 36px;
+margin-bottom: 30px;
+
+}
+
+
+.img-gallery {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+.img-gallery img {
+width: 300px;
+height: 200px;
+
+border-radius: 10px;
+margin: 15px;
+cursor: pointer;
+opacity: 0.8;
+transition: transform 0.3s ease;
+}
+.img
+-gallery img:hover {
+transform: scale(1.1);
+opacity: 1;
+}
+
+/* Lightbox (Popup) */
+#boxContainer {
+display: none;
+justify-content: center;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.85);
+z-index: 999;
+}
+
+#boxItem {
+width: 70%;
+height: 70%;
+background-size: cover;
+background-position: center;
+border-radius: 10px;
+position: relative;
+}
+
+
+/* Control Buttons */
+#boxItem i {
+color: #fff;
+cursor: pointer;
+position: absolute;
+transition: color 0.3s;
+}
+#boxItem i:hover {
+color: #e4b95b;
+}
+#close {
+top: 15px;
+right: 20px;
+}
+#prev {
+left: 15px;
+top: 50%;
+transform: translateY(
+-50%);
+
+}
+#next {
+right: 15px;
+top: 50%;
+transform: translateY(
+-50%);
+
+}
+
+/* Contact Section start */
+#contact {
+background: #f4f2ed;
+padding: 5rem 0;
+}
+#contact .container {
+max-width: 900px;
+}
+#contact .contact-content {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+#contact .contact-info {
+width: 50%;
+}
+form {
+width: 50%;
+}
+#contact .contact-info div {
+margin: 30px 0;
+line-height: 1.7;
+}
+#contact .contact-info h3 {
+font-size: 28px;
+color: #383848;
+margin-bottom: 10px;
+}
+#contact .contact-info p {
+
+
+color: #9a9a9a;
+}
+
+
+#contact .contact-info p i {
+
+color: #e4b95b;
+
+margin-right: 5px;
+
+}
+
+
+#contact .contact-info a i {
+
+color: #fff;
+background: #383848;
+padding: 10px;
+
+font-size: 20px;
+
+border-radius: 50%;
+}
+
+
+#contact .contact-info a i:hover {
+
+
+
+background-color: #e4b95b;
+
+color: #383848;
+}
+form input,
+textarea {
+display: block;
+width: 100%;
+padding: 20px 15px;
+margin: 20px 0;
+border: none;
+
+
+background-color: #e3e2dd;
+
+}
+form input:focus,
+textarea:focus {
+outline: none;
+}
+form button {
+
+color: #fff;
+background-color: #383848;
+padding: 15px 30px;
+border: none;
+cursor: pointer;
+font-size: 18px;
+transition: all 0.3s ease;
+}
+form button:hover {
+background-color: #e4b95b;
+color: #383848;
+}
+/* Contact Section End */
+
+#footer { 
+    background-color: #383848; 
+    text-align: center; 
+    color: #fff; 
+    padding: 15px 0; 
+    font-size: 14px; 
+} 
